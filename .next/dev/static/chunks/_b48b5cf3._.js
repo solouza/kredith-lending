@@ -307,48 +307,480 @@ const SampleIntegration = ()=>{
     const [pineapple, setPineapple] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [pizzaboxId, setPizzaboxId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const isConnected = !!currentAccount;
+    // Flat Pizza SVG
+    const HeroPizzaSVG = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: "280",
+            height: "280",
+            viewBox: "0 0 200 200",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "100",
+                    cy: "100",
+                    r: "95",
+                    fill: "#E8B86D"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 43,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "100",
+                    cy: "100",
+                    r: "78",
+                    fill: "#E53935"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 45,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "100",
+                    cy: "100",
+                    r: "72",
+                    fill: "#FFCA28"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 47,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "70",
+                    cy: "65",
+                    r: "14",
+                    fill: "#C62828"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 49,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "130",
+                    cy: "75",
+                    r: "14",
+                    fill: "#C62828"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 50,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "85",
+                    cy: "120",
+                    r: "14",
+                    fill: "#C62828"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 51,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "125",
+                    cy: "130",
+                    r: "14",
+                    fill: "#C62828"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 52,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "100",
+                    cy: "90",
+                    r: "11",
+                    fill: "#C62828"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 53,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                    cx: "55",
+                    cy: "100",
+                    rx: "7",
+                    ry: "12",
+                    fill: "#43A047",
+                    transform: "rotate(-30 55 100)"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 55,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                    cx: "145",
+                    cy: "105",
+                    rx: "7",
+                    ry: "12",
+                    fill: "#43A047",
+                    transform: "rotate(25 145 105)"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 56,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                    cx: "105",
+                    cy: "145",
+                    rx: "7",
+                    ry: "12",
+                    fill: "#43A047",
+                    transform: "rotate(10 105 145)"
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 57,
+                    columnNumber: 7
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/sample.tsx",
+            lineNumber: 41,
+            columnNumber: 5
+        }, ("TURBOPACK compile-time value", void 0));
     if (!isConnected) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             style: {
                 minHeight: "100vh",
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "1rem"
+                flexDirection: "column",
+                background: "#FFF8E1",
+                position: "relative",
+                overflow: "hidden"
             },
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    maxWidth: "500px",
-                    width: "100%"
-                },
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$heading$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Heading"], {
-                        size: "6",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    style: {
+                        position: "absolute",
+                        top: "8%",
+                        left: "5%",
+                        width: "80px",
+                        height: "80px",
+                        borderRadius: "50%",
+                        background: "#FFCA28",
+                        opacity: 0.4
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 72,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    style: {
+                        position: "absolute",
+                        top: "20%",
+                        right: "8%",
+                        width: "50px",
+                        height: "50px",
+                        borderRadius: "50%",
+                        background: "#43A047",
+                        opacity: 0.3
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 73,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    style: {
+                        position: "absolute",
+                        bottom: "25%",
+                        left: "10%",
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        background: "#E53935",
+                        opacity: 0.25
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 74,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    style: {
+                        position: "absolute",
+                        bottom: "15%",
+                        right: "12%",
+                        width: "60px",
+                        height: "60px",
+                        borderRadius: "50%",
+                        background: "#FFCA28",
+                        opacity: 0.35
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 75,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    style: {
+                        flex: 1,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "2rem",
+                        position: "relative",
+                        zIndex: 1
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
-                            marginBottom: "1rem"
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            maxWidth: "800px",
+                            width: "100%",
+                            gap: "1.5rem"
                         },
-                        children: "Pizza dApp"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    display: "inline-flex",
+                                    alignItems: "center",
+                                    gap: "0.5rem",
+                                    background: "#43A047",
+                                    padding: "0.5rem 1rem",
+                                    borderRadius: "4px"
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    style: {
+                                        color: "white",
+                                        fontSize: "0.8rem",
+                                        fontWeight: "600",
+                                        letterSpacing: "1px"
+                                    },
+                                    children: "POWERED BY IOTA"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sample.tsx",
+                                    lineNumber: 104,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/components/sample.tsx",
+                                lineNumber: 96,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    textAlign: "center"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        style: {
+                                            fontSize: "clamp(2.5rem, 8vw, 4.5rem)",
+                                            fontWeight: "800",
+                                            color: "#E53935",
+                                            margin: 0,
+                                            lineHeight: 1.1
+                                        },
+                                        children: "Pack a Pizza"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sample.tsx",
+                                        lineNumber: 116,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        style: {
+                                            fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+                                            color: "#757575",
+                                            margin: "0.75rem 0 0 0",
+                                            fontWeight: "500"
+                                        },
+                                        children: "The tastiest on-chain pizzeria"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sample.tsx",
+                                        lineNumber: 125,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/sample.tsx",
+                                lineNumber: 115,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    margin: "0.5rem 0"
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HeroPizzaSVG, {}, void 0, false, {
+                                    fileName: "[project]/components/sample.tsx",
+                                    lineNumber: 137,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/components/sample.tsx",
+                                lineNumber: 136,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    display: "flex",
+                                    flexWrap: "wrap",
+                                    justifyContent: "center",
+                                    gap: "0.75rem"
+                                },
+                                children: [
+                                    {
+                                        text: "Cook Pizzas",
+                                        bg: "#E53935"
+                                    },
+                                    {
+                                        text: "Pack & Store",
+                                        bg: "#43A047"
+                                    },
+                                    {
+                                        text: "Earn Rewards",
+                                        bg: "#E8B86D"
+                                    }
+                                ].map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            background: item.bg,
+                                            padding: "0.5rem 1rem",
+                                            borderRadius: "4px"
+                                        },
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                fontWeight: "600",
+                                                color: "white",
+                                                fontSize: "0.9rem"
+                                            },
+                                            children: item.text
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/sample.tsx",
+                                            lineNumber: 157,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, i, false, {
+                                        fileName: "[project]/components/sample.tsx",
+                                        lineNumber: 152,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)))
+                            }, void 0, false, {
+                                fileName: "[project]/components/sample.tsx",
+                                lineNumber: 141,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    background: "white",
+                                    padding: "1.5rem 2.5rem",
+                                    borderRadius: "8px",
+                                    textAlign: "center",
+                                    border: "2px solid #E53935"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            gap: "0.5rem",
+                                            marginBottom: "0.5rem"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    width: "8px",
+                                                    height: "8px",
+                                                    borderRadius: "50%",
+                                                    background: "#43A047"
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sample.tsx",
+                                                lineNumber: 177,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    color: "#43A047",
+                                                    fontWeight: "600",
+                                                    fontSize: "0.85rem"
+                                                },
+                                                children: "Ready to cook"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sample.tsx",
+                                                lineNumber: 178,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/sample.tsx",
+                                        lineNumber: 170,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                        style: {
+                                            display: "block",
+                                            color: "#333",
+                                            fontSize: "1.1rem",
+                                            fontWeight: "500"
+                                        },
+                                        children: "Connect your wallet to start"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sample.tsx",
+                                        lineNumber: 180,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/sample.tsx",
+                                lineNumber: 163,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/sample.tsx",
-                        lineNumber: 43,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                        children: "Please connect your wallet to interact with the contract."
-                    }, void 0, false, {
-                        fileName: "[project]/components/sample.tsx",
-                        lineNumber: 44,
+                        lineNumber: 87,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/sample.tsx",
-                lineNumber: 42,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
+                }, void 0, false, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 78,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    style: {
+                        display: "flex",
+                        height: "8px"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                flex: 1,
+                                background: "#43A047"
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/components/sample.tsx",
+                            lineNumber: 194,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                flex: 1,
+                                background: "#E53935"
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/components/sample.tsx",
+                            lineNumber: 195,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                flex: 1,
+                                background: "#43A047"
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/components/sample.tsx",
+                            lineNumber: 196,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/sample.tsx",
+                    lineNumber: 193,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
             fileName: "[project]/components/sample.tsx",
-            lineNumber: 41,
+            lineNumber: 63,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -387,7 +819,7 @@ const SampleIntegration = ()=>{
                     children: "Pizza dApp"
                 }, void 0, false, {
                     fileName: "[project]/components/sample.tsx",
-                    lineNumber: 69,
+                    lineNumber: 221,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 !objectId ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -406,7 +838,7 @@ const SampleIntegration = ()=>{
                                     children: "Olive Oils (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 226,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -416,13 +848,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 227,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 73,
+                            lineNumber: 225,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -439,7 +871,7 @@ const SampleIntegration = ()=>{
                                     children: "Yeast (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 236,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -449,13 +881,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 237,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 83,
+                            lineNumber: 235,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -472,7 +904,7 @@ const SampleIntegration = ()=>{
                                     children: "Flour (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 246,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -482,13 +914,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 95,
+                                    lineNumber: 247,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 93,
+                            lineNumber: 245,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -505,7 +937,7 @@ const SampleIntegration = ()=>{
                                     children: "Water (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 256,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -515,13 +947,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 257,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 103,
+                            lineNumber: 255,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -538,7 +970,7 @@ const SampleIntegration = ()=>{
                                     children: "Salt (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 266,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -548,13 +980,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 267,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 113,
+                            lineNumber: 265,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -571,7 +1003,7 @@ const SampleIntegration = ()=>{
                                     children: "Tomato Sauce (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 276,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -581,13 +1013,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 277,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 123,
+                            lineNumber: 275,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -604,7 +1036,7 @@ const SampleIntegration = ()=>{
                                     children: "Cheese (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 286,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -614,13 +1046,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 287,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 133,
+                            lineNumber: 285,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -637,7 +1069,7 @@ const SampleIntegration = ()=>{
                                     children: "Pineapple (u16)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 296,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -647,13 +1079,13 @@ const SampleIntegration = ()=>{
                                     type: "number"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 297,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 143,
+                            lineNumber: 295,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -678,7 +1110,7 @@ const SampleIntegration = ()=>{
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 160,
+                                        lineNumber: 312,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     "Cooking..."
@@ -686,7 +1118,7 @@ const SampleIntegration = ()=>{
                             }, void 0, true) : "Cook Pizza"
                         }, void 0, false, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 153,
+                            lineNumber: 305,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         state.error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -706,25 +1138,25 @@ const SampleIntegration = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 169,
+                                lineNumber: 321,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/sample.tsx",
-                            lineNumber: 168,
+                            lineNumber: 320,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sample.tsx",
-                    lineNumber: 72,
+                    lineNumber: 224,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     children: state.isLoading && !data ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
                         children: "Loading PizzaBox..."
                     }, void 0, false, {
                         fileName: "[project]/components/sample.tsx",
-                        lineNumber: 178,
+                        lineNumber: 330,
                         columnNumber: 15
                     }, ("TURBOPACK compile-time value", void 0)) : state.error ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
@@ -742,7 +1174,7 @@ const SampleIntegration = ()=>{
                                 children: "Error loading PizzaBox"
                             }, void 0, false, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 181,
+                                lineNumber: 333,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -753,7 +1185,7 @@ const SampleIntegration = ()=>{
                                 children: state.error.message || "Object not found or invalid"
                             }, void 0, false, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 184,
+                                lineNumber: 336,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -769,7 +1201,7 @@ const SampleIntegration = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 187,
+                                lineNumber: 339,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -782,13 +1214,13 @@ const SampleIntegration = ()=>{
                                 children: "Clear & Cook New"
                             }, void 0, false, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 190,
+                                lineNumber: 342,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sample.tsx",
-                        lineNumber: 180,
+                        lineNumber: 332,
                         columnNumber: 15
                     }, ("TURBOPACK compile-time value", void 0)) : objectExists && !hasValidData ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
@@ -804,7 +1236,7 @@ const SampleIntegration = ()=>{
                                 children: "Object found but data structure is invalid. Please check the contract structure."
                             }, void 0, false, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 201,
+                                lineNumber: 353,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -820,13 +1252,13 @@ const SampleIntegration = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 204,
+                                lineNumber: 356,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sample.tsx",
-                        lineNumber: 200,
+                        lineNumber: 352,
                         columnNumber: 15
                     }, ("TURBOPACK compile-time value", void 0)) : data ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
@@ -846,7 +1278,7 @@ const SampleIntegration = ()=>{
                                         children: "PizzaBox Created"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 363,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -861,7 +1293,7 @@ const SampleIntegration = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 212,
+                                        lineNumber: 364,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -876,13 +1308,13 @@ const SampleIntegration = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 215,
+                                        lineNumber: 367,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 210,
+                                lineNumber: 362,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             isOwner && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -904,7 +1336,7 @@ const SampleIntegration = ()=>{
                                                 children: "Get Flag (PizzaBox ID)"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sample.tsx",
-                                                lineNumber: 223,
+                                                lineNumber: 375,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2d$field$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__TextField$3e$__["TextField"].Root, {
@@ -913,13 +1345,13 @@ const SampleIntegration = ()=>{
                                                 placeholder: objectId || "Enter PizzaBox ID"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sample.tsx",
-                                                lineNumber: 224,
+                                                lineNumber: 376,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 222,
+                                        lineNumber: 374,
                                         columnNumber: 21
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -937,18 +1369,18 @@ const SampleIntegration = ()=>{
                                             size: 16
                                         }, void 0, false, {
                                             fileName: "[project]/components/sample.tsx",
-                                            lineNumber: 240,
+                                            lineNumber: 392,
                                             columnNumber: 61
                                         }, ("TURBOPACK compile-time value", void 0)) : "Get Flag"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 230,
+                                        lineNumber: 382,
                                         columnNumber: 21
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 221,
+                                lineNumber: 373,
                                 columnNumber: 19
                             }, ("TURBOPACK compile-time value", void 0)),
                             state.hash && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -968,7 +1400,7 @@ const SampleIntegration = ()=>{
                                         children: "Transaction Hash"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 247,
+                                        lineNumber: 399,
                                         columnNumber: 21
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -980,7 +1412,7 @@ const SampleIntegration = ()=>{
                                         children: state.hash
                                     }, void 0, false, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 248,
+                                        lineNumber: 400,
                                         columnNumber: 21
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     state.isConfirmed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -993,13 +1425,13 @@ const SampleIntegration = ()=>{
                                         children: "Transaction confirmed!"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sample.tsx",
-                                        lineNumber: 250,
+                                        lineNumber: 402,
                                         columnNumber: 23
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 246,
+                                lineNumber: 398,
                                 columnNumber: 19
                             }, ("TURBOPACK compile-time value", void 0)),
                             state.error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1019,18 +1451,18 @@ const SampleIntegration = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sample.tsx",
-                                    lineNumber: 259,
+                                    lineNumber: 411,
                                     columnNumber: 21
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 258,
+                                lineNumber: 410,
                                 columnNumber: 19
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sample.tsx",
-                        lineNumber: 209,
+                        lineNumber: 361,
                         columnNumber: 15
                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
@@ -1046,7 +1478,7 @@ const SampleIntegration = ()=>{
                                 children: "PizzaBox not found"
                             }, void 0, false, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 267,
+                                lineNumber: 419,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
@@ -1062,7 +1494,7 @@ const SampleIntegration = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 268,
+                                lineNumber: 420,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$themes$2f$dist$2f$esm$2f$components$2f$button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1075,29 +1507,29 @@ const SampleIntegration = ()=>{
                                 children: "Clear & Cook New"
                             }, void 0, false, {
                                 fileName: "[project]/components/sample.tsx",
-                                lineNumber: 271,
+                                lineNumber: 423,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sample.tsx",
-                        lineNumber: 266,
+                        lineNumber: 418,
                         columnNumber: 15
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/components/sample.tsx",
-                    lineNumber: 176,
+                    lineNumber: 328,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/sample.tsx",
-            lineNumber: 68,
+            lineNumber: 220,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/sample.tsx",
-        lineNumber: 67,
+        lineNumber: 219,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

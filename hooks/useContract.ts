@@ -9,16 +9,16 @@ import {
 } from "@iota/dapp-kit"
 import { Transaction } from "@iota/iota-sdk/transactions"
 import type { IotaObjectData } from "@iota/iota-sdk/client"
+import { TESTNET_PACKAGE_ID } from "@/lib/config"
 
 // ============================================================================
 // CONTRACT CONFIGURATION
 // ============================================================================
 
-const PACKAGE_ID = "0x150da6a3a1a755cd33561dc80770fa7532dd043d029fc77cade3d19a0209cadc"
+const PACKAGE_ID = TESTNET_PACKAGE_ID
 export const CONTRACT_MODULE = "pizza"
 export const CONTRACT_METHODS = {
   COOK: "cook",
-  GET_FLAG: "get_flag",
 } as const
 
 // ============================================================================
@@ -30,19 +30,19 @@ function getObjectFields(data: IotaObjectData): { owner: string } | null {
     console.log("Data is not a moveObject:", data.content?.dataType)
     return null
   }
-  
+
   const fields = data.content.fields as any
   if (!fields) {
     console.log("No fields found in object data")
     return null
   }
-  
+
   console.log("Object fields structure:", JSON.stringify(fields, null, 2))
-  
-  const owner = data.owner && typeof data.owner === "object" && "AddressOwner" in data.owner 
-    ? String(data.owner.AddressOwner) 
+
+  const owner = data.owner && typeof data.owner === "object" && "AddressOwner" in data.owner
+    ? String(data.owner.AddressOwner)
     : ""
-  
+
   return {
     owner,
   }
@@ -66,8 +66,7 @@ export interface ContractState {
 }
 
 export interface ContractActions {
-  cook: (olive_oils: number, yeast: number, flour: number, water: number, salt: number, tomato_sauce: number, cheese: number, pineapple: number) => Promise<void>
-  getFlag: (pizzaboxId: string) => Promise<void>
+  cook: (pepperoni: number, sausage: number, cheese: number, onion: number, chives: number) => Promise<void>
   clearObject: () => void
 }
 
@@ -101,11 +100,11 @@ export const useContract = () => {
 
   const fields = data?.data ? getObjectFields(data.data) : null
   const isOwner = fields?.owner.toLowerCase() === address?.toLowerCase()
-  
+
   const objectExists = !!data?.data
   const hasValidData = !!fields
 
-  const cook = async (olive_oils: number, yeast: number, flour: number, water: number, salt: number, tomato_sauce: number, cheese: number, pineapple: number) => {
+  const cook = async (pepperoni: number, sausage: number, cheese: number, onion: number, chives: number) => {
     try {
       setIsLoading(true)
       setTransactionError(null)
@@ -113,14 +112,11 @@ export const useContract = () => {
       const tx = new Transaction()
       tx.moveCall({
         arguments: [
-          tx.pure.u16(olive_oils),
-          tx.pure.u16(yeast),
-          tx.pure.u16(flour),
-          tx.pure.u16(water),
-          tx.pure.u16(salt),
-          tx.pure.u16(tomato_sauce),
+          tx.pure.u16(pepperoni),
+          tx.pure.u16(sausage),
           tx.pure.u16(cheese),
-          tx.pure.u16(pineapple),
+          tx.pure.u16(onion),
+          tx.pure.u16(chives),
         ],
         target: `${PACKAGE_ID}::${CONTRACT_MODULE}::${CONTRACT_METHODS.COOK}`,
       })
@@ -167,45 +163,10 @@ export const useContract = () => {
     }
   }
 
-  const getFlag = async (pizzaboxId: string) => {
-    try {
-      setIsLoading(true)
-      setTransactionError(null)
-      const tx = new Transaction()
-      tx.moveCall({
-        arguments: [tx.object(pizzaboxId)],
-        target: `${PACKAGE_ID}::${CONTRACT_MODULE}::${CONTRACT_METHODS.GET_FLAG}`,
-      })
-
-      signAndExecute(
-        { transaction: tx },
-        {
-          onSuccess: async ({ digest }) => {
-            setHash(digest)
-            await iotaClient.waitForTransaction({ digest })
-            await refetch()
-            setIsLoading(false)
-          },
-          onError: (err) => {
-            const error = err instanceof Error ? err : new Error(String(err))
-            setTransactionError(error)
-            console.error("Error:", err)
-            setIsLoading(false)
-          },
-        }
-      )
-    } catch (err) {
-      const error = err instanceof Error ? err : new Error(String(err))
-      setTransactionError(error)
-      console.error("Error getting flag:", err)
-      setIsLoading(false)
-    }
-  }
-
   const contractData: ContractData | null = fields
     ? {
-        owner: fields.owner,
-      }
+      owner: fields.owner,
+    }
     : null
 
   const clearObject = () => {
@@ -218,7 +179,6 @@ export const useContract = () => {
 
   const actions: ContractActions = {
     cook,
-    getFlag,
     clearObject,
   }
 

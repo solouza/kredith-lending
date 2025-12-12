@@ -1,49 +1,64 @@
-# IOTA dApp Starter
+# Pizza Box
 
-A beginner-friendly Next.js template for building IOTA dApps with Move smart contracts.
+Complete guide for deploying and customizing your IOTA dApp.
 
-## 🚀 Quick Start
+## 📍 Contract Address
+
+**Network**: Testnet
+**Package ID**: `0x60cc7119c2418cd870138e9df1acd0f36bafd760a524b532575cdef1911d23cb`
+**Explorer**: [View on Explorer](https://iotascan.com/testnet/object/0x60cc7119c2418cd870138e9df1acd0f36bafd760a524b532575cdef1911d23cb/contracts)
+
+## 🚀 Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open [http://localhost:3000](http://localhost:3000)** in your browser
+
+## 📝 Next Steps
+
+### 1. Deploy Your Move Contract
 
 ```bash
-# Install dependencies
-npm install --legacy-peer-deps
-
-# Deploy your contract
-npm run iota-deploy
-
-# Start development server
-npm run dev
+cd contract/<your-project-name>
+iota move build
+iota client publish
 ```
 
-## 📚 Documentation
+Then manually copy the package ID and update `lib/config.ts`:
 
-For detailed instructions, see **[INSTRUCTION_GUIDE.md](./INSTRUCTION_GUIDE.md)**
-
-## 🎯 Features
-
-- ✅ Wallet connection with IOTA dApp Kit
-- ✅ Move smart contract integration
-- ✅ TypeScript support
-- ✅ Modern UI with Radix UI
-- ✅ Automated deployment and integration
-- ✅ Error handling and loading states
-
-## 📁 Project Structure
-
-```
-├── app/              # Next.js app directory
-├── components/       # React components
-├── hooks/            # Custom hooks
-├── lib/              # Configuration
-└── contract/         # Move contracts
+```typescript
+export const TESTNET_PACKAGE_ID = "0xYOUR_PACKAGE_ID"
 ```
 
-## 📚 Learn More
+### 2. Customize Your dApp
+- Adjust `Provider.tsx` for the default environment of your dApp.
+- Adjust `useContracts.ts` for methods to interact with your contract. 
+- Adjust `components/sample.tsx` to customize how your dApp looks.
+
+
+## 🔧 Advanced Configuration
+
+### Network Configuration
+
+Edit `lib/config.ts` to configure different networks:
+
+```typescript
+export const TESTNET_PACKAGE_ID = "0x..."
+export const DEVNET_PACKAGE_ID = "0x..."
+export const MAINNET_PACKAGE_ID = "0x..."
+```
+
+## 📚 Additional Resources
 
 - [IOTA Documentation](https://wiki.iota.org/)
-- [IOTA dApp Kit](https://github.com/iotaledger/dapp-kit)
 - [Next.js Documentation](https://nextjs.org/docs)
+- [Move Language Documentation](https://move-language.github.io/move/)
 
-## 📄 License
-
-MIT
