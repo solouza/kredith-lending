@@ -66,7 +66,14 @@ export interface ContractState {
 }
 
 export interface ContractActions {
-  cook: (pepperoni: number, sausage: number, cheese: number, onion: number, chives: number) => Promise<void>
+  cook: (
+    recipient: string,
+    pepperoniAmounts: number[],
+    sausageAmounts: number[],
+    cheeseAmounts: number[],
+    onionAmounts: number[],
+    chivesAmounts: number[]
+  ) => Promise<void>
   clearObject: () => void
 }
 
@@ -104,7 +111,14 @@ export const useContract = () => {
   const objectExists = !!data?.data
   const hasValidData = !!fields
 
-  const cook = async (pepperoni: number, sausage: number, cheese: number, onion: number, chives: number) => {
+  const cook = async (
+    recipient: string,
+    pepperoniAmounts: number[],
+    sausageAmounts: number[],
+    cheeseAmounts: number[],
+    onionAmounts: number[],
+    chivesAmounts: number[]
+  ) => {
     try {
       setIsLoading(true)
       setTransactionError(null)
@@ -112,11 +126,12 @@ export const useContract = () => {
       const tx = new Transaction()
       tx.moveCall({
         arguments: [
-          tx.pure.u16(pepperoni),
-          tx.pure.u16(sausage),
-          tx.pure.u16(cheese),
-          tx.pure.u16(onion),
-          tx.pure.u16(chives),
+          tx.pure.address(recipient),
+          tx.pure.vector("u16", pepperoniAmounts),
+          tx.pure.vector("u16", sausageAmounts),
+          tx.pure.vector("u16", cheeseAmounts),
+          tx.pure.vector("u16", onionAmounts),
+          tx.pure.vector("u16", chivesAmounts)
         ],
         target: `${PACKAGE_ID}::${CONTRACT_MODULE}::${CONTRACT_METHODS.COOK}`,
       })

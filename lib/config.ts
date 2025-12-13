@@ -8,8 +8,8 @@ import { getFullnodeUrl } from "@iota/iota-sdk/client"
 import { createNetworkConfig } from "@iota/dapp-kit"
 
 // Package IDs
-export const DEVNET_PACKAGE_ID = "0x60cc7119c2418cd870138e9df1acd0f36bafd760a524b532575cdef1911d23cb"
-export const TESTNET_PACKAGE_ID = "0x60cc7119c2418cd870138e9df1acd0f36bafd760a524b532575cdef1911d23cb"
+export const DEVNET_PACKAGE_ID = ""
+export const TESTNET_PACKAGE_ID = "0x3fb9efdeb48cca80a0eaf80d4d366e238a050a40197fefe095814a52cb9ced33"
 export const MAINNET_PACKAGE_ID = ""
 
 // Network configuration
