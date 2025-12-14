@@ -1,11 +1,10 @@
-import { WalletConnect } from "@/components/Wallet-connect"
-import SampleIntegration from "@/components/sample"
+import KredithApp from '@/components/KredithApp';
 
 export default function Home() {
   return (
-    <div>
-      {/* <WalletConnect /> */}
-      <SampleIntegration />
-    </div>
-  )
+    <main className="min-h-screen bg-white">
+      {/* Kita panggil komponen MVP di sini */}
+      <KredithApp />
+    </main>
+  );
 }

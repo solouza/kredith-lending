@@ -1,0 +1,10 @@
+[package]
+name = "kredith"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+Iota = { git = "https://github.com/iotaledger/iota.git", subdir = "crates/iota-framework/packages/iota-framework", rev = "testnet" }
+
+[addresses]
+KREDITH = "0x0" # Nanti diganti otomatis saat publish atau set ke address wallet kamu
